@@ -1,6 +1,6 @@
 function countdown(){
     var now = new Date();
-    var kyo_tu = new Date('2022-01-16 09:30:00');
+    var kyo_tu = new Date('2022-01-16 09:30:00'.replace('/-/g','/'));
     var sub=kyo_tu-now;
     var day = Math.floor(sub/ (24*60*60*1000));
     var hour = Math.floor((sub-(day*24*60*60*1000))/(60*60*1000));
